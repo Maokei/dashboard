@@ -1,0 +1,14 @@
+@import url(
+    'https://fonts.googleapis.com/css?family=Roboto&display=swap'
+);
+@import 'reset';
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Sans-serif';
+    background: $lightGrey;
+}
