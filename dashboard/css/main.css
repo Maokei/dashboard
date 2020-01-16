@@ -170,29 +170,40 @@ header {
   margin-left: 280px;
   padding: 10px; }
   header .search-area {
-    display: inline-block; }
+    display: inline-block;
+    width: 50%; }
     header .search-area .fa {
       color: #EAEDF3; }
-    header .search-area input[type=""] {
-      background: transparent;
+    header .search-area input[type="text"] {
+      background: #fff;
       border: none;
       font-size: 1.3rem;
       color: #92CF48;
       padding: 10px;
-      font-weight: 100; }
+      font-weight: 100;
+      width: 85%;
+      transition: all .5 ease-in-out; }
+      header .search-area input[type="text"]:hover {
+        background-color: #F4F6F9; }
   header .user-area {
     display: inline-block;
     float: right;
     padding: 10px; }
     header .user-area a {
+      color: #1b1b1b;
       display: inline-block;
       padding-right: 20px;
       text-decoration: none;
       vertical-align: top;
       height: 30px; }
+      header .user-area a.add {
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 7px; }
       header .user-area a.notification {
         position: relative;
-        font-size: 20px; }
+        font-size: 20px;
+        padding-top: 5px; }
         header .user-area a.notification .circle {
           display: inline-block;
           width: 12px;
@@ -216,4 +227,12 @@ header {
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        display: inline-block; }
+        display: inline-block;
+        margin-right: 10px; }
+      header .user-area a .fa-caret-down {
+        position: relative;
+        top: -8px; }
+
+input:active, input:focus, textarea:focus {
+  background: #F4F6F9;
+  outline: none; }

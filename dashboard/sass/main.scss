@@ -70,18 +70,25 @@ header {
 
     .search-area {
         display: inline-block;
+        width: 50%;
 
         .fa {
             color: $greyDark;
         }
 
-        input[type=""] {
-            background: transparent;
+        input[type="text"] {
+            background: #fff;
             border: none;
             font-size: 1.3rem;
             color: $greenNeon;
             padding: 10px;
             font-weight: 100;
+            width: 85%;
+            transition: all .5 ease-in-out;
+            
+            &:hover {
+                background-color: $greyLight;
+            }
         }
     }
 
@@ -91,15 +98,22 @@ header {
         padding: 10px;
         
         a {
+            color: #1b1b1b;
             display: inline-block;
             padding-right: 20px;
             text-decoration: none;
             vertical-align: top;
             height: 30px;
+            &.add {
+                font-size: 16px;
+                font-weight: 500;
+                padding-top: 7px;
+            }
 
             &.notification {
                 position: relative;
                 font-size: 20px;
+                padding-top: 5px; 
 
                 .circle {
                     display: inline-block;
@@ -127,7 +141,18 @@ header {
                 height: 30px;
                 border-radius: 50%;
                 display: inline-block;
+                margin-right: 10px;
+            }
+
+            .fa-caret-down {
+                position: relative;
+                top: -8px;
             }
         }
     }
+}
+
+input:active, input:focus, textarea:focus {
+    background: $greyLight;
+    outline: none;
 }
