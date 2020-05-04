@@ -216,7 +216,7 @@ header {
           vertical-align: middle;
           position: absolute;
           background: red;
-          top: -3px;
+          top: 3px;
           left: 7px; }
       header .user-area a .user-img {
         background: url(https://randomuser.me/api/portraits/women/17.jpg) no-repeat center center;
