@@ -1,15 +1,193 @@
 #content-area {
   margin-left: 280px;
   padding: 15px;
-  .concent-heading {
 
+  .content-heading {
+    h1 {
+      color: purple;
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #1b1b1b;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
   }
 
   .content-cards {
+    margin-bottom: 30px;
 
+    .content-card {
+      background: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      overflow: auto;
+
+      .user-img {
+        background: url(https://randomuser.me/api/portraits/women/17.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 115px;
+        height: 115px;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+
+      .user-name {
+        font-size: 1rem;
+        color: purple;
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+      }
+
+      .user-title {
+        display: block;
+        font-size: 0.8rem;
+        text-align: center;
+        margin: 10px 0;
+      }
+
+      .education {
+        font-size: 0.8rem;
+        display: inline-block;
+        color: $greyDarkFont;
+      }
+
+      .schools {
+        font-size: 0.8rem;
+      }
+
+      h6 {
+        font-size: 0.8rem;
+      }
+
+      .date {
+        font-size: 1.3rem;
+        display: block;
+        border-left: 5px solid $greenNeon;
+        position: relative;
+        left: -20px;
+        padding: 5px 40px;
+        margin: 20px 0;
+      }
+
+      .job-type {
+        background: orange;
+        color: white;
+        width: 20px;
+        height: 20px;
+        font-size: 0.6rem;
+        padding: 5px;
+        display: inline-block;
+        border-radius: 50%;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .location {
+        font-size: 0.8;
+        font-weight: 300;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .position {
+        font-size: 0.8;
+        font-weight: 500;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .time {
+        font-size: 0.8;
+        font-weight: 300;
+        display: block;
+        color: $greyDarkFont;
+        margin-bottom: 0.5rem;
+      }
+    }
   }
 
-  .content-card {
+  table {
+    thead{
+      background: $greyDarkBG;
+      -webkit-border-top-left-radius: 5px;
+      -webkit-border-top-right-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      -moz-border-radius-topright: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
 
+      th {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: left;
+        padding: 12px 10px;
+        color: $greyDarkFont;
+      }
+    }
+
+    tbody {
+      background: #fff;
+      font-size: 0.8rem;
+      td {
+        padding: 20px 10px;
+        color: $greyDarkFont;
+
+        .logo {
+          display: inline-block;
+          background: $greenNeon;
+          white: #fff;
+          padding: 15px;
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          margin-right: 15px;
+          text-align: center;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .col-md-2 {
+    width: ((2 * 100%) / 12);
+    padding: 0 15px;
+    display: inline-block;
+    float: left;
+  }
+
+  .col-md-4 {
+    width: ((4 * 100%) / 12);
+    padding: 0 15px;
+    display: inline-block;
+    float: left;
+  }
+
+  .col-md-3 {
+    width: ((3 * 100%) / 12);
+    padding: 0 15px;
+    display: inline-block;
+    float: left;
+  }
+
+  .col-md-9 {
+    width: ((9 * 100%) / 12);
+    padding: 0 15px;
+    display: inline-block;
+    float: left;
+  }
+
+  .col-md-10 {
+    width: ((10 * 100%) / 12);
+    padding: 0 15px;
+    display: inline-block;
+    float: left;
   }
 }

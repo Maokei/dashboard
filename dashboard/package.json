@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "watch": "gulp"
+  },
   "dependencies": {
     "del": "^5.1.0",
     "gulp": "^4.0.2",
